@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio of om gautam</title>
+    <!-- this is for linking the css in html for styling  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is the script for the icons which show just above the serivecs we mention icon type below in services class -->
+    <script src="https://kit.fontawesome.com/461700a925.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <i class=""></i>
+                <ul  id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contect">Contect</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        </div>
+    </div>
+    <!-- form here about section is starts -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/om5.jpg" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="about-text">About Me</h1>
+                <p>
+                    Welcome to my corner of the web! I'm Om Gautam, a passionate Full Stack Developer with a deep love for all things related to web development. With a wealth of experience and expertise in both front-end and back-end technologies, I thrive in the ever-evolving world of programming and design <br>
+                    <p class="aboutdec">Who Am I? </p> <br>
+                     I am a dedicated professional who takes pride in transforming creative ideas into functional, user-friendly websites and applications. My journey into the world of web development began with an insatiable curiosity and a determination to master the tools and technologies that power the digital realm.
+                    <br><p class="aboutdec"> My Expertise</p> 
+                    <br> As a Full Stack Developer, I excel in both the client-side and server-side aspects of web development. From crafting pixel-perfect user interfaces using HTML, CSS, and JavaScript to architecting robust, scalable back-end systems with technologies like Node.js and Python, I can handle it all. My proficiency extends to various popular frameworks, libraries, and databases, making me a versatile developer capable of taking on diverse projects.
+                </p>
+
+                <div class="tab-tittle">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web devloper skills</span><br>designing wepsites interface</li>
+                        <li><span>App devloper</span><br>designing app interface</li>
+                        <li><span>UI/UX</span><br> Building andriod/ios apps</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents " id="Experience">
+                    <ul>
+                        <li><span>Web devloper Expreience</span><br>designing wepsites interface</li>
+                        <li><span>App devloper</span><br>designing app interface</li>
+                        <li><span>UI/UX</span><br> Building andriod/ios apps</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Web devloper Education</span><br>designing wepsites interface</li>
+                        <li><span>App devloper</span><br>designing app interface</li>
+                        <li><span>UI/UX</span><br> Building andriod/ios apps</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- seriveces -->
+    <div id="services">
+        <div class="container">
+            <h1 class="about-text">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <!-- same as written below -->
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> <br>
+                        
+                        Om Gautam - Your Web Designer <br> <br>
+                        
+                        I'm Om Gautam, your creative web designer. With a keen eye for design and a focus on user experience, I craft visually captivating and user-friendly websites. Let's work together to create a unique online presence that reflects your brand and engages your audience. Contact me today, and let's bring your web design vision to life.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <!-- same as written below -->
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>
+                        Om Gautam - UX/UI Designer <br><br>
+
+                        I'm Om Gautam, your dedicated UX/UI designer. I specialize in creating seamless, user-centric interfaces that enhance the digital experience. Let's collaborate to design captivating and intuitive user interfaces for your web or mobile projects. Reach out today, and let's transform your vision into an engaging reality.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <!-- this is for adding the icon just above the services which we will get from font awesome site and we wuill also mention the script code for this just above the head tag -->
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        Om Gautam - App Designer <br><br>
+
+                        I'm Om Gautam, your experienced app designer. I specialize in crafting visually appealing and user-friendly mobile app interfaces. Let's work together to design exceptional apps that captivate users and deliver exceptional experiences. Contact me today, and let's turn your app design ideas into reality.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =======================================portfolio====================================================== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle"> My work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="images/work-1.png">
+                   <div class="layer">
+                     <h3>social Media app</h3>
+                     <p>Om Gautam - Social Media App <br><br>
+
+                        Welcome to my Social Media App! Stay connected, see what I'm up to, and engage with my latest updates. Join the conversation, explore my work, and share in the excitement. Download now to be a part of the Om Gautam community</p>
+                     <a href=""><i class="fa-solid fa-link"></i></a>
+                   </div>
+    
+                </div>
+        
+                <div class="work">
+                   <img src="images/work-2.png" >
+                   <div class="layer">
+                     <h3>music app</h3>
+                     <p>Om Gautam - Music App <br><br>
+
+                        Welcome to my Music App! Immerse yourself in a world of music, curated playlists, and a personalized listening experience. Discover new tracks, stay in the groove, and share your favorite tunes with friends. Download now and let the music move you with Om Gautam</p>
+                     <a href=""><i class="fa-solid fa-link"></i></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="images/work-3.png" >
+                  <div class="layer">
+                     <h3>online shoping app</h3>
+                     <p>Om Gautam - Online Shopping App <br> <br>
+
+                        Explore the world of convenient shopping with my Online Shopping App. Discover a wide range of products, exclusive deals, and hassle-free browsing. With secure payments and swift delivery, it's your one-stop shop for all your needs. Download today and start shopping with Om Gautam</p>
+                     <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+               </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+      </div>
+ </div>
+ <!-- ===================================================contect======================================================================= -->
+ <div id="contect">
+     <div class="container">
+         <div class="row">
+             <div class="contect-left">
+                 <h1 class="sub-title">Contect ME</h1>
+                 <p> <i class="fa-solid fa-envelope"></i>  contect@example.com</p>
+                 <p> <i class="fa-solid fa-phone"></i>  6394941281</p>
+                 <div class="social-icon">
+                     <a href="http//facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+
+                    </div>
+                    <!-- this is the link for dowloading the cv just below the social meadia icons for decorating it we simply writes its class name btn which we previously decorate it  -->
+                    <a href="images/my-cv.pdf" download class="btn btn2" >Download CV</a>
+              </div>
+              <!-- this is for creating the form for inquries -->
+              <div class="contect-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+              </div>
+           </div>
+           
+        </div>
+        <div class="copyright">
+            <p>copyright &copy om gautam .made by <i class="fa-solid fa-heart"></i> om gautam</p>
+        </div>
+    
+    </div>
+
+    <script>
+       var tablinks=document.getElementsByClassName("tab-links");
+       var tabcontents=document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname)
+       {
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         } 
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         /*this is for showing the underline when we click on the skills /experience/education*/
+         event.currentTarget.classList.add("active-link");
+         /* this is for showing the content which is inside the the active tabs such as skills /experience/education */
+         document.getElementById(tabname).classList.add("active-tab")
+        } 
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0"
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px"
+        }
+    </script>
+</body>
+</html>

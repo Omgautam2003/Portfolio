@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #ffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+   
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/ombg.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+   
+    padding:5px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px ;
+
+}
+nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+/* this is for putting under line below the links */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+     transition: 0.5s;/*this is for slowly apperarence of underline below the list  */
+
+
+}
+/* this line is for making hover effact below the list(when we hover our  ponter over the link then red colored under line is appearbelow the link)  */
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 60px;
+    margin: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/* ============================================from here about section is starts========================================================== */
+#about{
+    padding: 80px 80px;
+    color: #ababab;
+}
+/* making parent box flex for placing element side by side */
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutdec{
+    color: #ff004f;
+}
+
+.about-col-1{
+    flex-basis: 35%; /*it means the width of the column will be 35% ; */
+}
+.about-col-1 img{
+   width: 100%;
+   border-radius: 20px;/* this is for making image edges cuver */
+
+}
+/* by this we declare the size of the col-2  60% and above we col-1 is 35% so we leaft 5% for space between both   */
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.about-text{
+ font-size: 60px;
+  font-weight: 600; /*for thikness fo the font   */
+}
+.tab-tittle{
+    display: flex;
+    margin:20px 0 40px ;/* the first perameter is for top secon is for left/ right and third is for bottom  */
+
+}
+/* this is for displaying the class tab-links bold and adding font size 18px */
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition:all;
+}
+.tab-links::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.5s ;
+}
+/* this is for the displayimg the underline below thw active link  */
+.tab-links.active-link::after{
+   width: 100%;
+}
+/* this is for removing the style of list (orderd or unorderd) */
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+
+
+}
+/* this is for display the contents inside the span white or bold */
+.tab-content ul li span{
+    color: #fff;
+    font-size: 14px;
+}
+
+/* this is for hiding all the contents  of each tab-contents  */
+.tab-contents{
+    display: none;
+}
+/* this is for displaying active-tab contents below the skills */
+.tab-contents.active-tab{
+    display: block;
+}
+/*=========================== from here services portion will be start======================================   */
+
+.service{
+     padding: 30px 0; /*adding padding 30px top and bottom and 0 at right or left */
+     
+}
+.services-list{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px ;
+    margin: 50px;
+}
+/* this is for adding the boarder in our service section */
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    /* this is for adding transformation slowly which we declared after three line in hover effect */
+    transition: background 0.5s, transform 0.5s;
+}
+/* this is for increacing the size of the icon of services */
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/* this is for styling the heading of the services */
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/* this is for styling the learn more link */
+.services-list div a{
+     text-decoration: none;
+     color:#fff;
+     font-size: 12px;
+     margin: 20px;
+     display: inline-block;
+
+}
+.services-list div:hover{
+    /* this is for appearance fo box red while we hover on it ; */
+    background-color: #ff004f;
+    /* this is for increment of box by 10px from y direction */
+    transform: translateY(-10px);
+}
+/* ===========================portfolio==================================== */
+#portfolio{
+    padding: 50px 0;
+}
+/* this is for displaying the portfolio images in the form of grid  */
+.work-list{
+    
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px ;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+/* this is for decorating the portfolio box and making the text at the center of the box  */
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom:20px ;
+}
+/* this is for decorating the link avilable below the portfolio */
+.layer a{
+    margin-top: 20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    border-radius: 50px; /*for making border radius like circle*/
+} 
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#ff004f;
+}
+/* =============================================contect========================================== */
+.contect-left{
+    flex-basis: 35%;
+}
+.contect-right{
+    flex-basis: 60%;
+}
+
+.contect-left p{
+   margin-top: 30px;
+}
+/* this is for displaying the contect icon red which is placed left side of email and contcet no. */
+.contect-left p i{
+    color: #ff004f;
+    margin-right:15px ;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top:30px ;
+
+}
+/* this is for making the social icons good and placed in one line and also apply the transition over it  */
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: tranfrom 0.5s;
+
+
+}
+/* when we hove on social icon it show some transition */
+.social-icon a:hover{
+
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+/* this is for sifting the download butten at left side */
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+/* this is for enabling the form to cove the 100% of the contect box */
+.contect-right from{
+    width: 100%;
+
+}
+/* this is for increasing the sizeof the box in input section */
+form input,form textarea{
+    width: 100%;
+    border: 100%;
+    outline:none;
+    background: #ababab;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding:14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* this is for copyright and placing it at the centerwith the heart symbol */
+.copyright{
+    width: 100%;
+    text-align:center ;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 25px 0;
+    background: #262626;
+}
+/* this is for color of the heart */
+.copyright p i{
+    color: #ff004f;
+}
+/* ========================================css for samll screen========================================================= */
+nav .fa-solid{
+    display:none; /*for hidding the icons in window size */
+
+}
+@media only screen and (max-width :600px){
+    #header{
+        background-image:url(images/omabout.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+
+    }
+    /* this is for displaying the icone in mobile size */
+    nav .fa-solid{
+        display:block ;
+        font-size: 25px;
+    }
+    nav ul {
+        background: linear-gradient(rgb(0,0,0,0.6),#ff004f);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+
+    }
+    /* for display the content in straight line which is present inside the content box */
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    /* for putting the cross icon top of the menu */
+    nav .fa-solid{
+        
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+     /* this is for decreasing the six=ze of font in portfolio section */
+    .subtittle{
+        font-size: 40px;
+    }
+    /* this is for adjustin the size according to the display in about section */
+   .about-col-1, .about-col-2{
+      flex-basis: 100%;
+   }
+   .about-col-1{
+    margin-bottom: 30px;
+
+   }
+   .about-col-2{
+    font-size: 14px;
+   }
+   /* this is for decreasing the size of links such as skill/experiecnce/education */
+   .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+
+   }
+   .contect-left,  .contect-right{
+          flex-basis: 100%;
+   }
+   .copyright{
+    font-size:14px ;
+   }
+
+   
+
+  
+    
+}
+
+
+
